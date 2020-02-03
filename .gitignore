@@ -1,0 +1,4 @@
+.env
+.prettierrc.json
+node_modules
+settings.json

@@ -1,0 +1,26 @@
+{
+  "name": "v20",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devstart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Erich Meier <info@mi-consult.ch>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "~3.0.0",
+    "express-session": "^1.17.0",
+    "knex": "^0.20.8",
+    "mysql": "^2.17.1",
+    "newsapi-wrapper": "^1.0.6",
+    "promise-mysql": "^3.3.2"
+  }
+}
