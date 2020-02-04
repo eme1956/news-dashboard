@@ -2,8 +2,13 @@ const expressHandlebars = require('express-handlebars'),
     express = require('express'),
     bodyParser = require('body-parser'),
     routing = require('./routes'),
-    session = require('express-session');
+    session = require('express-session'),
+    RedisStore = require('connect-redis')(session);
 require('dotenv').config();
+
+const redisOptions = {
+    url: process.env.REDIS_URL
+};
 
 // Server mit Express anlegen
 const server = express();
@@ -28,6 +33,7 @@ server.use(logUrlMiddleware); //Middleware benutzen
 //Middleware express-session benutzen
 server.use(
     session({
+        store: new RedisStore(redisOptions),
         secret: process.env.SESSION_SECRET || 'Please_SET_session_SeCreT',
         resave: false,
         saveUninitialized: true
