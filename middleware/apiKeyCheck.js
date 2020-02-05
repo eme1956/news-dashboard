@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
     ) {
         next();
     } else {
-        res.write(401, {
+        res.writeHead(401, {
             'WWW-Authenticate': 'Provide API KEY'
         });
         res.end('');
