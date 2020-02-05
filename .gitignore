@@ -1,4 +1,5 @@
 .env
 .prettierrc.json
+heroku-user.json
 node_modules
 settings.json
