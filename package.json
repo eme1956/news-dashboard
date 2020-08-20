@@ -12,7 +12,7 @@
   "author": "Erich Meier <info@mi-consult.ch>",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "connect-redis": "^3.4.2",
     "dotenv": "^8.1.0",
